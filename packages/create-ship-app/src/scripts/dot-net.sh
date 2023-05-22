@@ -15,8 +15,10 @@ platform_specific_dir="$7"
 mkdir "$project_name"
 cd "$project_name"
 
-git clone https://github.com/paralect/ship.git
-cp -a ship/.net/. .
+git clone -b a.yarmolovich/fix-dotnet-project-generation https://github.com/paralect/ship.git # TODO remove -b flag
+cp -a ship/template/. .
+rm -rf apps/api
+mv apps/api-net apps/api
 
 # Install services from ship monorepo
 

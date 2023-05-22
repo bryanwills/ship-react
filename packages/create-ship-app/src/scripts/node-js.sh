@@ -12,8 +12,9 @@ platform_specific_dir="$4"
 mkdir "$project_name"
 cd "$project_name"
 
-git clone https://github.com/paralect/ship.git
+git clone -b a.yarmolovich/fix-dotnet-project-generation https://github.com/paralect/ship.git # TODO remove -b flag
 cp -a ship/template/. .
+rm -rf apps/api-net
 
 # Rename services in docker-compose.yml
 
