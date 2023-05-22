@@ -66,11 +66,13 @@ cd ../
 
 # Install modules and setup husky
 
-npm install
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
+# TODO uncomment lines below 
 
-npm run bootstrap
-npx husky install
+# npm install
+# git init
+# git add .
+# git commit -m "initial commit"
+# git branch -M main
+
+# npm run bootstrap
+# npx husky install

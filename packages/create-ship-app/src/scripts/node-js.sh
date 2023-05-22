@@ -45,14 +45,16 @@ fi
 
 rm -rf ship
 
-# Install pnpm
-npm i -g pnpm
+# TODO uncomment lines below
 
-# Install modules and setup husky
-pnpm i --prefer-frozen-lockfile --ignore-scripts
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
+# # Install pnpm
+# npm i -g pnpm
 
-pnpm husky install
+# # Install modules and setup husky
+# pnpm i --prefer-frozen-lockfile --ignore-scripts
+# git init
+# git add .
+# git commit -m "initial commit"
+# git branch -M main
+
+# pnpm husky install
