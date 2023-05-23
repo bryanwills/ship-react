@@ -98,7 +98,7 @@ services:
       dockerfile: app/Scheduler/Dockerfile
       target: development
       args:
-        DOTNET_ENVIRONMENT: DevelopmentDocker
+        DOTNET_ENVIRONMENT: DevelopmentNoSqlDocker
     networks:
       - ship
     volumes:
